@@ -2,7 +2,7 @@
 
 **ESRGAN-MultiBand** is a PyTorch Lightning-based implementation of the Enhanced Super-Resolution Generative Adversarial Network (ESRGAN), adapted for multispectral satellite imagery. Unlike typical RGB applications, this version supports 4+ spectral bands (e.g., near-infrared, red-edge) commonly used in remote sensing datasets.
 
->  This repository is currently being updated. Finalized documentation, pretrained models, and all training scripts will be added soon.
+
 
 
 # SEN2-VENUS ESRGAN Super-Resolution (2x and 4x)
