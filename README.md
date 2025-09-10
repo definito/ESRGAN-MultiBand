@@ -49,7 +49,8 @@ Easy-to-use runner with custom normalization, reproducible split, and visualizat
 
 
 **DIsplay: RGB:**
-<img width="2096" height="721" alt="esrgan" src="https://github.com/user-attachments/assets/28482221-440b-451f-b293-0a4b5e6292af" />
+
+<img width="2670" height="916" alt="image" src="https://github.com/user-attachments/assets/eff865c2-01b5-4c18-a8aa-19d4f0f55144" />
 
 
 
