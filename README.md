@@ -55,10 +55,11 @@ Easy-to-use runner with custom normalization, reproducible split, and visualizat
 
 # Result for 4x SR
 ### **SEN2VENUS_2x - band- 5678** 
-**DIsplay: Band 5-6-7:**
-<img width="2109" height="725" alt="esrgan" src="https://github.com/user-attachments/assets/51c94456-bd9c-4e34-9349-96a09f0d200c" />
+**Display: Band 5-6-7:**
+<img width="2670" height="916" alt="image" src="https://github.com/user-attachments/assets/88d1c8d9-53b7-417b-9aef-106b743613cc" />
 
-**DIsplay: Band 8-7-6:**
+
+**Display: Band 8-7-6:**
 <img width="2670" height="916" alt="image" src="https://github.com/user-attachments/assets/2f7a9af9-d7a5-42cc-9a81-a4eb36169091" />
 
 
