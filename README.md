@@ -1,21 +1,21 @@
-# ESRGAN-MultiBand (Repository is being updated)
+# ESRGAN-MultiBand 
 
 **ESRGAN-MultiBand** is a PyTorch Lightning-based implementation of the Enhanced Super-Resolution Generative Adversarial Network (ESRGAN), adapted for multispectral satellite imagery. Unlike typical RGB applications, this version supports 4+ spectral bands (e.g., near-infrared, red-edge) commonly used in remote sensing datasets.
 
 >  This repository is currently being updated. Finalized documentation, pretrained models, and all training scripts will be added soon.
 
 
-# SEN12-VENUS ESRGAN Super-Resolution (2x)
+# SEN2-VENUS ESRGAN Super-Resolution (2x and 4x)
 This repository implements a complete PyTorch Lightning pipeline for super-resolution on the SEN12-VENUS dataset, using an enhanced ESRGAN architecture with 4-band (RGB+IR) input.
 
 **_Dataset Tested:_ DIV2k(RGB- small subset)_2x , 2x_sen2venus RGB only, 2x_sen2vusRGBI,  4x sen2venus**
 
-| Dataset           | Input Bands | Epochs | PSNR (dB)      | SSIM    |
-|------------------|--------|--------|----------------|---------|
-| DIV2K-2x (subset) | RGB    | 200    | 30.4836        | 0.8693  |
-| Sen2Venus-2x      | RGB    | 63     | 41.0543        | 0.9633  |
-| Sen2Venus-2x      | RGBI   | 63     | 31.2548        | 0.9281  |
-| Sen2Venus-4x      | 5678   | 76     | 36.40      | 0.928 |
+| Dataset           | Input Bands | Epochs | PSNR (dB) | SSIM  | LPIPS-1 | LPIPS-2 |
+|-------------------|-------------|--------|-----------|-------|---------|---------|
+| DIV2K-2x (subset) | RGB         | 200    | 30.48     | 0.869 | –       | –       |
+| Sen2Venus-2x      | RGBI        | 200    | 37.45     | 0.950 | 0.085 (RGB) | 0.152 (NIRG) |
+| Sen2Venus-4x      | 5678        | 200    | 37.51     | 0.925 | 0.177 (567) | 0.154 (678) |
+
 
 
 # Key Features:
@@ -31,10 +31,6 @@ Lightning-ready training loop with checkpointing, logging, and visual validation
 
 Easy-to-use runner with custom normalization, reproducible split, and visualization.
 
-# Coming Soon:
-4× Super-Resolution variant with multi-level upscaling.
-
-Band 5,6,7,8 ESRGAN model for multispectral learning beyond RGB-I.
 
 ### **DIV2K:** 
 
@@ -42,22 +38,28 @@ Band 5,6,7,8 ESRGAN model for multispectral learning beyond RGB-I.
 
 ![Image](https://github.com/user-attachments/assets/4cd3072b-8ca4-401c-afd5-e6125d73ec68)
 
-![Image](https://github.com/user-attachments/assets/ad1db13f-3a86-40ab-9a72-0249ed0a1464)
 
-
-# Result for 2x 
-### **SEN2VENUS_2x - band- BGIR** 
+# Result for 2x SR
+### **SEN2VENUS_2x - band- RBGI** 
 
 **DISPLAY: Band Combination: IRG**
+<img width="2098" height="723" alt="esrgan" src="https://github.com/user-attachments/assets/209336c5-c67e-40e9-a6ac-7e16987516ac" />
 
-![Image](https://github.com/user-attachments/assets/5edf0ebd-85c4-4d63-9428-9156844781c0)
 
-![Image](https://github.com/user-attachments/assets/0a0205d9-8ee5-4a19-bbae-cbffb9e8e215)
 
 
 **DIsplay: RGB:**
+<img width="2096" height="721" alt="esrgan" src="https://github.com/user-attachments/assets/28482221-440b-451f-b293-0a4b5e6292af" />
 
-![Image](https://github.com/user-attachments/assets/2ef9e39b-ccb9-46f8-b08f-712ae2c4e513)
 
-![Image](https://github.com/user-attachments/assets/5a4b0520-8e28-4fb2-8751-635313ce2124)
+
+# Result for 4x SR
+### **SEN2VENUS_2x - band- 5678** 
+**DIsplay: Band 5-6-7:**
+<img width="2109" height="725" alt="esrgan" src="https://github.com/user-attachments/assets/51c94456-bd9c-4e34-9349-96a09f0d200c" />
+
+**DIsplay: Band 8-7-6:**
+<img width="2670" height="916" alt="image" src="https://github.com/user-attachments/assets/2f7a9af9-d7a5-42cc-9a81-a4eb36169091" />
+
+
 
